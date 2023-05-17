@@ -71,13 +71,13 @@ def check_trangle(sides: dict) -> {}:
 
         # проверяем соответствие длин
         if sum_other_side > max_side:
-            result["trangle"] = True
+            result[KEY_TRANGLE] = True
 
-        if result.get('trangle'):
+        if result.get(KEY_TRANGLE):
             # две стороны одинаковы - равнобедренный
-            result["isosceles"] = (len(other_sides) < 2 or other_sides[0] == other_sides[1])
+            result[KEY_ISOSCELES] = (len(other_sides) < 2 or other_sides[0] == other_sides[1])
             # все стороны равны - равносторонний
-            result["equilate"] = (len(other_sides) == 0)
+            result[KEY_EQUILATE] = (len(other_sides) == 0)
 
     return result
 
