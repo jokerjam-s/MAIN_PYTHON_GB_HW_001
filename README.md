@@ -34,5 +34,10 @@
 from random import randint
 num = randint(LOWER_LIMIT, UPPER_LIMIT)
 
+**примеры выполнения**
 
+![img.png](img/img_3-01.png)
 
+![img.png](img/img_3-02.png)
+
+![img.png](img/img_3-03.png)

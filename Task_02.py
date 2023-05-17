@@ -4,9 +4,9 @@
 
 # Считаем что пользователь "не дурак", проверку правильности ввода не производим
 
+# Допустимый диапазон чисел для проверки
 MIN_NUMBER = 0
 MAX_NUMBER = 100000
-
 
 def main():
     ask_digit = True
@@ -15,7 +15,7 @@ def main():
     while ask_digit:
         number = get_int()
 
-        if number < MIN_NUMBER or number > MAX_NUMBER:
+        if number not in range(MIN_NUMBER, MAX_NUMBER + 1):
             print(f"Число должно быть не меньше {MIN_NUMBER} и не больше {MAX_NUMBER}")
             continue
 
